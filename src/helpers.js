@@ -21,11 +21,10 @@ export const searchStocks = (symbol, startDate, endDate) => {
     .then(res => res.json())
     .then(response => { return response });
 };
+/* parses date format from datepicker into human readable string */
 const parseDate = (date) => {
-  let year, month, day, fullDate;
-  year = date.getUTCFullYear();
-  month = date.getUTCMonth() + 1;
-  day = date.getUTCDate();
-  fullDate = new Date(year + '-' + month + '-' + day).toISOString().slice(0, 10);
-  return fullDate;
+  const year = date.getUTCFullYear();
+  const month = date.getUTCMonth() + 1;
+  const day = date.getUTCDate();
+  return new Date(year + '-' + month + '-' + day).toISOString().slice(0, 10);
 }
