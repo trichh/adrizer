@@ -1,0 +1,37 @@
+{
+  "name": "adrizer",
+  "version": "1.0.0",
+  "proxy": "http://localhost:4000",
+  "dependencies": {
+    "@reduxjs/toolkit": "1.8.0",
+    "ag-grid-community": "27.1.0",
+    "ag-grid-react": "27.1.0",
+    "body-parser": "1.19.2",
+    "express": "4.17.3",
+    "nodemon": "2.0.15",
+    "react": "17.0.2",
+    "react-datepicker": "4.7.0",
+    "react-dom": "17.0.2",
+    "react-icons": "4.3.1",
+    "react-redux": "7.2.6",
+    "react-scripts": "5.0.0",
+    "request": "2.88.2"
+  },
+  "scripts": {
+    "start": "react-scripts start & nodemon server",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

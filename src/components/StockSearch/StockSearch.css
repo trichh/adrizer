@@ -1,0 +1,76 @@
+.stockSearch {
+  display: flex;
+  flex-direction: column;
+}
+.formGroup:last-of-type {
+  width: 175px;
+}
+.formGroup label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.formGroup .button {
+  background-color: #007bff;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: .75rem;
+  padding: .7rem 0;
+  text-align: center;
+  width: 100%
+}
+.formGroup .disabledButton {
+  background-color: gray;
+}
+.searchInput {
+  position: relative;
+}
+.searchInput svg {
+  left: 10px;
+  position: absolute;
+  top: 9px;
+}
+.searchInput input {
+  border: solid 1px #9EA0A4;
+  border-radius: 4px;
+  margin-bottom: .75rem;
+  padding: .75rem 0 .75rem 2.5rem;
+  width: calc(100% - 2.5rem);
+}
+.searchInput input:focus {
+  outline-width: 0;
+}
+.react-datepicker-wrapper {
+  width: unset !important;
+}
+.react-datepicker-wrapper:first-of-type {
+  margin-right: 15px;
+}
+.react-datepicker-wrapper input {
+  margin-bottom: .75rem;
+  padding: .7rem;
+  width: calc(200px - .7rem);
+}
+.react-datepicker-wrapper input:focus {
+  outline-width: 0;
+}
+.react-datepicker__tab-loop {
+  display: inline-block;
+}
+@media screen and (min-width: 1030px) {
+  .stockSearch {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .searchInput input {
+    width: 300px;
+  }
+  .formGroup:last-of-type {
+    position: relative;
+  }
+  .formGroup .button {
+    bottom: 0;
+    position: absolute;
+  }
+}

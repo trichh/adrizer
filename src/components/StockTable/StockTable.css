@@ -1,0 +1,7 @@
+.ag-theme-alpine {
+  height: 800px;
+  width: 100%;
+}
+.stockTable > p {
+  margin-bottom: 0;
+}

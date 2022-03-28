@@ -1,0 +1,21 @@
+.autocompleteList {
+  left: 0;
+  margin-top: -.75rem;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 99;
+}
+.autocompleteItem {
+  background-color: #ffffff;
+  border: solid 1px #9EA0A4;
+  border-top: unset;
+  cursor: pointer;
+  padding: .75rem;
+}
+.autocompleteItem:hover {
+  background-color: #E5E5E5;
+}
+.autocompleteItem p {
+  margin: 0;
+}
